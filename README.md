@@ -25,8 +25,10 @@ A thorough analysis of unique characters within the legal texts was performed. T
  
 2.3.	Preprocessing for NLP
 To enhance the model's adaptability to various legal document formats, a robust preprocessing pipeline was implemented.
+
 a.	Tokenization
 Legal texts were tokenized into smaller units, such as words or subwords, to facilitate the NLP analysis. Tokenization strategies are considered the nature of legal language, where specific terms or phrases might carry significant meaning.
+
 b.	Stopword Removal
 Common legal stopwords that do not contribute to the overall meaning were identified and removed. This step aimed to reduce noise in the dataset and enhance the model's ability to focus on substantive legal content.
  
