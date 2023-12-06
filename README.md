@@ -1,8 +1,4 @@
 # Legal_Document_Analysis_and_Classification_Using_NLP_and_Deep_Learning
-Lavanyaa Murali 
-Hari Vishal Reddy Anekallu 
-Trinadh Nandamuri
-
  
  # Abstract
 This paper presents a comprehensive study on leveraging Natural Language Processing (NLP) and Deep Learning techniques for the analysis and classification of legal documents. The goal is to develop an intelligent system capable of automatically categorizing legal texts, streamlining the document review process, and enhancing efficiency in the legal domain. It introduces a novel approach, detailing its motivation, technical intricacies, experimental results, and an in-depth analysis of the outcomes. The study emphasizes the importance of a nuanced evaluation, considering not only the achieved results but also the insights gained from the experimentation process.
