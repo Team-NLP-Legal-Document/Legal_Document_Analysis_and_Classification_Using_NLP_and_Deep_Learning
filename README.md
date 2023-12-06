@@ -109,4 +109,3 @@ The system's security and compliance measures ensure the protection of sensitive
 
 
 
-![image](https://github.com/Team-NLP-Legal-Document/Legal_Document_Analysis_and_Classification_Using_NLP_and_Deep_Learning/assets/62792091/37a2e335-c2c3-4d68-82ff-172a72d8aee4)
