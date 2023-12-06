@@ -11,15 +11,20 @@ As legal practices deal with an increasing influx of documents, ranging from con
 
 # 2.	Proposed Methodology
 This section provides a more detailed overview of our methodology, emphasizing the practical implementation of the solution. We explore the choice of specific NLP techniques, deep learning architectures, and the rationale behind the selection. Additionally, we discuss the considerations made in the preprocessing phase to ensure the model's adaptability to various legal document formats.
+
 2.1.	Data Collection
-To train and evaluate our model, we utilized the "justice.csv" dataset obtained from Kaggle, a platform known for its diverse and high-quality datasets. The dataset encompasses a wide array of legal documents, including court judgments, legal opinions, and statutes. The choice of this dataset was motivated by its richness in content, providing a representative sample of legal text variations. An overview of the dataset is shown below. 
+To train and evaluate our model, we utilized the "justice.csv" dataset obtained from Kaggle, a platform known for its diverse and high-quality datasets. The dataset encompasses a wide array of legal documents, including court judgments, legal opinions, and statutes. The choice of this dataset was motivated by its richness in content, providing a representative sample of legal text variations.
+
  2.2.	Data Cleaning
 Before diving into the model development, a comprehensive data cleaning process was undertaken. This involved multiple steps to ensure the quality and reliability of the dataset.
+
 a.	 Summary Statistics
 Initial exploration of the dataset involved calculating summary statistics. Descriptive statistics, such as mean, median, and standard deviation of document lengths, were computed. This provided insights into the distribution of text lengths within the dataset, guiding decisions on sequence length parameters for the deep learning model.
+
  b.	Cleaning and Missing Values
 The dataset was inspected for missing values and inconsistencies. Any documents with incomplete information or formatting issues were either removed or subjected to imputation strategies. Cleaning procedures addressed issues like inconsistent line breaks, encoding problems, and special characters that might interfere with the NLP preprocessing.
  The dataset exhibits varying degrees of missing values across columns, with 'disposition' and 'issue_area' particularly notable for having 72 and 142 missing entries, respectively. Columns such as 'first_party', 'second_party', 'first_party_winner', and 'decision_type' also contain missing values. Decisions on handling these missing values should be informed by the significance of each column to the analysis. Potential strategies include imputation, dropping rows or columns, or further investigation to understand the pattern of missing data. 
+ 
 c.	Unique Character Analysis
 A thorough analysis of unique characters within the legal texts was performed. This step aimed to identify and handle special characters, symbols, or formatting elements that might not contribute to the semantic meaning of the text. Removing or encoding these unique characters ensured a more focused analysis on the linguistic content.
  
@@ -52,6 +57,7 @@ However, the macro and weighted averages for precision, recall, and F1-score sug
 # 5.	Deployment
 5.1.	Interface
 A user-friendly interface was designed to facilitate document upload, preprocessing, training, and classification. The system provides users with an intuitive experience and the ability to interact seamlessly with the model. The interface is easy to use and intuitive. To classify a document, users simply need to upload the document, select the desired preprocessing options, and click on the "Classify Document" button. The model will then classify the document and display the results in the "Document Classification and Analysis" section.
+
 5.2.	Components 
 The interface has the following components:
 •	Upload Document: This button allows users to upload a document to be processed by the model.
@@ -61,6 +67,7 @@ The interface has the following components:
 •	Model Training and Evaluation: This section allows users to train and evaluate the model.
 •	Document Classification and Analysis: This section allows users to classify the document and analyze the results.
 •	Visualization and Reporting: This section allows users to visualize the results of the classification and analysis.
+
 5.3.	Results 
 The interface also allows users to train and evaluate the model. This is useful for users who want to fine-tune the model to their specific needs. To train the model, users need to provide a dataset of labeled documents. The model will then learn to classify the documents based on the provided labels.
 
